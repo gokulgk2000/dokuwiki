@@ -1,11 +1,3 @@
 [build]
-  base = "/"
-  publish = "data/pages"
-  functions = "lib/plugins"
-  command = "echo 'No build command'"
-  # You might need to specify your build command here if you have any preprocessing steps
-
-[[redirects]]
-  from = "/*"
-  to = "/doku.php/:splat"
-  status = 200
+  command = "npm run build"  # Replace with your build command
+  publish = "dist"          # Replace with your build output directory
