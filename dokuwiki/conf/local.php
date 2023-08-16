@@ -14,3 +14,7 @@
 //$conf['useacl']      = 1;                //Use Access Control Lists to restrict access?
 //$conf['superuser']   = 'joe';
 
+$conf['useacl'] = 1;
+$conf['superuser'] = 'admin';
+$conf['plugin']['authplain']['users'] = 'admin:hashedpassword';
+$conf['plugin']['sqlite']['db'] = 'path/to/your/dokuwiki/data/cache/db/dokuwiki.db';
